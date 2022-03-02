@@ -40,7 +40,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest __tests__/ --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -62,6 +62,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-dom": "^17.0.11"
+    "@types/react-dom": "^17.0.11",
+    "jest": "^26.6.0"
   }
 }
