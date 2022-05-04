@@ -1,6 +1,8 @@
+Blazor app deployed to: https://white-flower-0e717ea0f.1.azurestaticapps.net/
+
 [![Azure Static Web Apps CI/CD](https://github.com/codemonkey85/pokemon/actions/workflows/azure-static-web-apps-white-flower-0e717ea0f.yml/badge.svg)](https://github.com/codemonkey85/pokemon/actions/workflows/azure-static-web-apps-white-flower-0e717ea0f.yml)
 
-Original readme as follows
+Original readme as follows:
 
 # 25 years of Pokemon
 
