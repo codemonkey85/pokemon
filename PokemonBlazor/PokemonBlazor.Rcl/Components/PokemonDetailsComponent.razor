@@ -1,7 +1,7 @@
-﻿@if (Pokemon?.Details?.Species?.Details is not null)
+﻿@if (Pokemon is not null)
 {
     <div>
-        <img src=@Pokemon.Details.ImageUrl />
+        <img src=@GetArtworkUrl(Pokemon.Id) />
         <span>@Pokemon.Name</span>
     </div>
 }
