@@ -1,0 +1,7 @@
+﻿@if (PokemonList.Any())
+{
+    @foreach (var pokemon in PokemonList)
+    {
+        <PokemonComponent Pokemon=pokemon />
+    }
+}

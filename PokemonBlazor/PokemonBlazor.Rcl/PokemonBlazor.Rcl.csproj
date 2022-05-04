@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PokemonBlazor.Shared\PokemonBlazor.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

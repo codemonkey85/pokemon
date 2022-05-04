@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonBlazor", "PokemonBlazor\PokemonBlazor.csproj", "{1EC08F80-ACAA-443E-B9FB-72F2195540D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBlazor.Rcl", "PokemonBlazor.Rcl\PokemonBlazor.Rcl.csproj", "{F0172CB2-4608-4E0F-8588-74EFF1F55CAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonBlazor.Rcl", "PokemonBlazor.Rcl\PokemonBlazor.Rcl.csproj", "{F0172CB2-4608-4E0F-8588-74EFF1F55CAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonBlazor.Shared", "PokemonBlazor.Shared\PokemonBlazor.Shared.csproj", "{EDBA7FA3-39A9-47CE-AEAF-5D4D033EB67E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F0172CB2-4608-4E0F-8588-74EFF1F55CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0172CB2-4608-4E0F-8588-74EFF1F55CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0172CB2-4608-4E0F-8588-74EFF1F55CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDBA7FA3-39A9-47CE-AEAF-5D4D033EB67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDBA7FA3-39A9-47CE-AEAF-5D4D033EB67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDBA7FA3-39A9-47CE-AEAF-5D4D033EB67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDBA7FA3-39A9-47CE-AEAF-5D4D033EB67E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
