@@ -1,3 +1,7 @@
+[![Azure Static Web Apps CI/CD](https://github.com/codemonkey85/pokemon/actions/workflows/azure-static-web-apps-white-flower-0e717ea0f.yml/badge.svg)](https://github.com/codemonkey85/pokemon/actions/workflows/azure-static-web-apps-white-flower-0e717ea0f.yml)
+
+Original readme as follows
+
 # 25 years of Pokemon
 
 On the occasion of the 25th anniversary of Pokemon, I created an app related to
