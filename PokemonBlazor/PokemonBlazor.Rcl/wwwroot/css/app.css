@@ -83,3 +83,75 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+.fire {
+    background-color: #fd7d24;
+}
+
+.grass {
+    background-color: var(--grass);
+}
+
+.electric {
+    background-color: var(--electric);
+}
+
+.water {
+    background-color: var(--water);
+}
+
+.ground {
+    background-color: var(--ground);
+}
+
+.rock {
+    background-color: var(--rock);
+}
+
+.fairy {
+    background-color: var(--fairy);
+}
+
+.poison {
+    background-color: var(--poison);
+}
+
+.bug {
+    background-color: var(--bug);
+}
+
+.dragon {
+    background-color: var(--dragon);
+}
+
+.psychic {
+    background-color: var(--psychic);
+}
+
+.flying {
+    background-color: var(--flying);
+}
+
+.fighting {
+    background-color: var(--fighting);
+}
+
+.normal {
+    background-color: var(--normal);
+}
+
+.ghost {
+    background-color: var(--ghost);
+}
+
+.steel {
+    background-color: var(--steel);
+}
+
+.dark {
+    background-color: var(--dark);
+}
+
+.ice {
+    background-color: var(--ice);
+}

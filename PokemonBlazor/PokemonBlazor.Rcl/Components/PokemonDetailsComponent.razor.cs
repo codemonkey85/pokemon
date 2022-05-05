@@ -4,15 +4,10 @@ public partial class PokemonDetailsComponent
 {
     [Parameter, EditorRequired] public Pokemon Pokemon { get; set; } = default!;
 
-    private readonly IDictionary<string, object> Attributes = new Dictionary<string, object>();
+    private string CssClass => Pokemon?.Types?.Any() == true ? Pokemon.Types[0].Type.Name : string.Empty;
 
     protected override async Task OnParametersSetAsync()
     {
-        if (Pokemon?.Types?.Any() == true)
-        {
-            Attributes.Add("style", $"background-color: {GetColorForType(Pokemon.Types[0].Type)};");
-        }
-
         //if (Pokemon.Details is null)
         //{
         //    Pokemon.Details = await PokeApiService.Get<PokemonDetails>(Pokemon.Url);
