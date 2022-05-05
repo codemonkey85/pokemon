@@ -1,26 +1,5 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-:root {
-    --fire: "#fd7d24";
-    --grass: "#9bcc50";
-    --electric: "#eed535";
-    --water: "#4592c4";
-    --ground: "#ab9842";
-    --rock: "#a38c21";
-    --fairy: "#fdb9e9";
-    --poison: "#b97fc9";
-    --bug: "#729f3f";
-    --dragon: "#97b3e6";
-    --psychic: "#f366b9";
-    --flying: "#3dc7ef";
-    --fighting: "#d56723";
-    --normal: "#a4acaf";
-    --ghost: "#7b62a3";
-    --steel: "#9eb7b8";
-    --dark: "#707070";
-    --ice: "#51c4e7";
-}
-
 html,
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -91,69 +70,69 @@ a,
 }
 
 .grass {
-    background-color: var(--grass);
+    background-color: #9bcc50;
 }
 
 .electric {
-    background-color: var(--electric);
+    background-color: #eed535;
 }
 
 .water {
-    background-color: var(--water);
+    background-color: #4592c4;
 }
 
 .ground {
-    background-color: var(--ground);
+    background-color: #ab9842;
 }
 
 .rock {
-    background-color: var(--rock);
+    background-color: #a38c21;
 }
 
 .fairy {
-    background-color: var(--fairy);
+    background-color: #fdb9e9;
 }
 
 .poison {
-    background-color: var(--poison);
+    background-color: #b97fc9;
 }
 
 .bug {
-    background-color: var(--bug);
+    background-color: #729f3f;
 }
 
 .dragon {
-    background-color: var(--dragon);
+    background-color: #97b3e6;
 }
 
 .psychic {
-    background-color: var(--psychic);
+    background-color: #f366b9;
 }
 
 .flying {
-    background-color: var(--flying);
+    background-color: #3dc7ef;
 }
 
 .fighting {
-    background-color: var(--fighting);
+    background-color: #d56723;
 }
 
 .normal {
-    background-color: var(--normal);
+    background-color: #a4acaf;
 }
 
 .ghost {
-    background-color: var(--ghost);
+    background-color: #7b62a3;
 }
 
 .steel {
-    background-color: var(--steel);
+    background-color: #9eb7b8;
 }
 
 .dark {
-    background-color: var(--dark);
+    background-color: #707070;
 }
 
 .ice {
-    background-color: var(--ice);
+    background-color: #51c4e7;
 }
