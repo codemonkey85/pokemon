@@ -2,11 +2,14 @@
 
 <h3>Pokémon Unobtainable in Generation 8 Games</h3>
 
-@if (doneLoading)
+@if (PokemonList.Count == 0)
 {
-    <PokedexComponent PokemonList=PokemonList />
+    <p>Loading...</p>
 }
 else
 {
-    <p>Loading...</p>
+    @foreach (var pokemon in PokemonList)
+    {
+        <PokemonComponent Pokemon=pokemon />
+    }
 }

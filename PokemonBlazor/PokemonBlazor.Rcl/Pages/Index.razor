@@ -1,12 +1,14 @@
 ﻿@page "/"
 
-<PageTitle>Pokedex</PageTitle>
+<PageTitle>Pokédex</PageTitle>
+<h3>Pokédex</h3>
 
-@if (doneLoading)
+@if (PokemonList.Count < Max)
 {
-    <PokedexComponent PokemonList=PokemonList />
+    <p>Loading... @Loaded / @Max</p>
+    <progress value="@Loaded" max="@Max" />
 }
-else
+@foreach (var pokemon in PokemonList)
 {
-    <p>Loading...</p>
+    <PokemonComponent Pokemon=pokemon />
 }

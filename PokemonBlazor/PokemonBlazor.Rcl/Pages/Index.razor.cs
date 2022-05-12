@@ -2,14 +2,20 @@ namespace PokemonBlazor.Rcl.Pages;
 
 public partial class Index
 {
-    private IEnumerable<Pokemon> PokemonList = Array.Empty<Pokemon>();
-
-    private bool doneLoading = false;
+    private readonly List<Pokemon> PokemonList = new();
+    private int Loaded = 0;
+    private const int Max = 898;
 
     protected override async Task OnInitializedAsync()
     {
-        PokemonList = await PokeApiClient.GetResourceAsync((
-            await PokeApiClient.GetNamedResourcePageAsync<Pokemon>(10, 0)).Results.Select(result => result));
-        doneLoading = true;
+        for (var id = 1; id <= Max; id++)
+        {
+            PokemonList.Add(await PokeApiClient.GetResourceAsync<Pokemon>(id));
+            Loaded++;
+            if (id == 5 || id % 20 == 0)
+            {
+                StateHasChanged();
+            }
+        }
     }
 }
