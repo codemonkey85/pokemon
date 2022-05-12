@@ -4,12 +4,8 @@ public partial class GenVIIUnobtainablePage
 {
     private readonly List<Pokemon> PokemonList = new();
 
-    private bool doneLoading = false;
-
-    protected override async Task OnInitializedAsync()
+    private readonly IList<int> UnobtainableIds = new[]
     {
-        var unobtainableIds = new[]
-        {
             495,
             496,
             497,
@@ -73,18 +69,23 @@ public partial class GenVIIUnobtainablePage
             779,
         };
 
-        foreach (var unobtainableId in unobtainableIds)
+    protected override async Task OnInitializedAsync()
+    {
+        foreach (var unobtainableId in UnobtainableIds)
         {
             try
             {
-                PokemonList.Add(await PokeApiClient.GetResourceAsync<Pokemon>(unobtainableId));
+                var pokemon = await PokeApiClient.GetResourceAsync<Pokemon>(unobtainableId);
+                if (pokemon is not null)
+                {
+                    PokemonList.Add(pokemon);
+                    StateHasChanged();
+                }
             }
             catch (Exception ex)
             {
                 Console.Error.WriteLine($"Error loading {unobtainableId}: {ex.Message}");
             }
         }
-
-        doneLoading = true;
     }
 }

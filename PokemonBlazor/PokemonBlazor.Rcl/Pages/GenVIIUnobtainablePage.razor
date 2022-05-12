@@ -2,9 +2,10 @@
 
 <h3>Pokémon Unobtainable in Generation 8 Games</h3>
 
-@if (PokemonList.Count == 0)
+@if (PokemonList.Count < UnobtainableIds.Count)
 {
-    <p>Loading...</p>
+    <p>Loading... @PokemonList.Count / @UnobtainableIds.Count</p>
+    <progress value="@PokemonList.Count" max="@UnobtainableIds.Count" />
 }
 else
 {

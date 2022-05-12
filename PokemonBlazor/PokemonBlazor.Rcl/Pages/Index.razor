@@ -3,12 +3,14 @@
 <PageTitle>Pokédex</PageTitle>
 <h3>Pokédex</h3>
 
-@if (PokemonList.Count < Max)
+@if (PokemonDtoList is null)
 {
-    <p>Loading... @Loaded / @Max</p>
-    <progress value="@Loaded" max="@Max" />
+    <p>Loading...</p>
 }
-@foreach (var pokemon in PokemonList)
+else
 {
-    <PokemonComponent Pokemon=pokemon />
+    @foreach (var pokemonDto in PokemonDtoList)
+    {
+        <PokemonDtoComponent PokemonDto=pokemonDto />
+    }
 }

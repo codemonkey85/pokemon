@@ -1,0 +1,7 @@
+﻿@if (PokemonDto is not null)
+{
+    <div class=@CssClass>
+        <img src=@GetPokemonArtworkUrl(PokemonDto.Id) />
+        <span>@PokemonDto.Name</span>
+    </div>
+}

@@ -25,5 +25,5 @@ public static class StaticFunctions
         _ => string.Empty,
     };
 
-    public static string GetPokemonArtworkUrl(int id) => $"https://assets.pokemon.com/assets/cms2/img/pokedex/detail/{id:D3}.png";
+    public static string GetPokemonArtworkUrl(int id) => $"/_content/PokemonBlazor.Rcl/images/art/{id:D3}.png";
 }

@@ -2,19 +2,17 @@ namespace PokemonBlazor.Rcl.Components;
 
 public partial class PokemonDetailsComponent
 {
-    [Parameter, EditorRequired] public Pokemon Pokemon { get; set; } = default!;
+    [Parameter, EditorRequired] public PokemonDto PokemonDto { get; set; } = default!;
+
+    public Pokemon? Pokemon { get; set; }
 
     private string CssClass => Pokemon?.Types?.Any() == true ? Pokemon.Types[0].Type.Name : string.Empty;
 
     protected override async Task OnParametersSetAsync()
     {
-        //if (Pokemon.Details is null)
-        //{
-        //    Pokemon.Details = await PokeApiService.Get<PokemonDetails>(Pokemon.Url);
-        //}
-        //if (Pokemon.Details.Species.Details is null)
-        //{
-        //    Pokemon.Details.Species.Details = await PokeApiService.Get<PokemonSpeciesDetails>(Pokemon.Details.Species.Url);
-        //}
+        if (PokemonDto is not null)
+        {
+            Pokemon = await PokeApiClient.GetResourceAsync<Pokemon>(PokemonDto.Id);
+        }
     }
 }
