@@ -15,9 +15,9 @@ public record PokemonDto
         }
     }
 
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
-    public string Url { get; set; }
+    public string? Url { get; set; }
 
-    public List<PokemonType> Types { get; set; }
+    public List<PokemonType>? Types { get; set; }
 }

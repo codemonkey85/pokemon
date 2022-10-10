@@ -2,7 +2,8 @@ namespace PokemonBlazor.Rcl.Pages;
 
 public partial class Index
 {
-    private IEnumerable<PokemonDto>? PokemonDtoList = null;
+    private IEnumerable<PokemonDto>? _pokemonDtoList;
 
-    protected override async Task OnInitializedAsync() => PokemonDtoList = await PokemonDtoService.GetPokemonDtoListAsync();
+    protected override async Task OnInitializedAsync() =>
+        _pokemonDtoList = await PokemonDtoService.GetPokemonDtoListAsync();
 }

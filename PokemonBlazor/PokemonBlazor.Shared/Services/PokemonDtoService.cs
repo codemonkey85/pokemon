@@ -4,15 +4,16 @@ public record PokemonDtoService(HttpClient HttpClient)
 {
     private const string ApiUrl = @"https://pokeapi.co/api/v2/pokemon/";
 
-    private IEnumerable<PokemonDto>? pokemonDtoList = null;
+    private IEnumerable<PokemonDto>? _pokemonDtoList;
 
     public async Task<IEnumerable<PokemonDto>> GetPokemonDtoListAsync()
     {
-        if (pokemonDtoList is null)
+        if (_pokemonDtoList is null)
         {
             await GetAllPokemonDtosAsync();
         }
-        return pokemonDtoList!;
+
+        return _pokemonDtoList!;
     }
 
     private async Task GetAllPokemonDtosAsync()
@@ -20,7 +21,7 @@ public record PokemonDtoService(HttpClient HttpClient)
         var apiResponseDto = await GetPokemonDtosAsync();
         if (apiResponseDto is not null)
         {
-            pokemonDtoList = apiResponseDto.Results;
+            _pokemonDtoList = apiResponseDto.Results;
         }
     }
 

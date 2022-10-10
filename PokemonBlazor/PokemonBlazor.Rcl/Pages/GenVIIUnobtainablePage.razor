@@ -3,14 +3,14 @@
 <PageTitle>Pokémon Unobtainable in Generation 8 Games</PageTitle>
 <h3>Pokémon Unobtainable in Generation 8 Games</h3>
 
-@if (PokemonList.Count < UnobtainableIds.Count)
+@if (_pokemonList.Count < _unobtainableIds.Count)
 {
-    <p>Loading... @PokemonList.Count / @UnobtainableIds.Count</p>
-    <progress value="@PokemonList.Count" max="@UnobtainableIds.Count" />
+    <p>Loading... @_pokemonList.Count / @_unobtainableIds.Count</p>
+    <progress value="@_pokemonList.Count" max="@_unobtainableIds.Count"></progress>
 }
 else
 {
-    @foreach (var pokemon in PokemonList)
+    @foreach (var pokemon in _pokemonList)
     {
         <PokemonComponent Pokemon=pokemon />
     }
