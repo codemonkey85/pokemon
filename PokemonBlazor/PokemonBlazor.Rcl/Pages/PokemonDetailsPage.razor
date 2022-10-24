@@ -1,0 +1,14 @@
+﻿@page "/pokemon/details/{Id:int}"
+
+@if (Pokemon is null)
+{
+    <PageTitle>Pokémon Details</PageTitle>
+    <h3>Pokémon Details</h3>
+    <p>Loading...</p>
+}
+else
+{
+    <PageTitle>@Pokemon.Name</PageTitle>
+    <h3>@Pokemon.Name</h3>
+    <PokemonDetailsComponent Pokemon=Pokemon />
+}

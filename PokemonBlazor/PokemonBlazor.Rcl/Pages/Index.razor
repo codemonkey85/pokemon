@@ -1,0 +1,16 @@
+﻿@page "/"
+
+<PageTitle>Pokédex</PageTitle>
+<h3>Pokédex</h3>
+
+@if (_pokemonDtoList is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    @foreach (var pokemonDto in _pokemonDtoList)
+    {
+        <PokemonDtoComponent PokemonDto=pokemonDto />
+    }
+}

@@ -1,3 +1,9 @@
+Blazor app deployed to: https://white-flower-0e717ea0f.1.azurestaticapps.net/
+
+[![Azure Static Web Apps CI/CD](https://github.com/codemonkey85/pokemon/actions/workflows/azure-static-web-apps-white-flower-0e717ea0f.yml/badge.svg)](https://github.com/codemonkey85/pokemon/actions/workflows/azure-static-web-apps-white-flower-0e717ea0f.yml)
+
+Original readme as follows:
+
 # 25 years of Pokemon
 
 On the occasion of the 25th anniversary of Pokemon, I created an app related to
@@ -19,12 +25,12 @@ API links. Depending of the type ofthe clicked Pokemon the background color is
 customized.
 
 Used API links:
+
 - https://pokeapi.co/api/v2/pokemon?limit=898 to fetch all Pokemon
 - https://pokeapi.co/api/v2/pokemon/${id} to fetch an individual Pokemon by its id
 - https://pokeapi.co/api/v2/pokemon-species/${id} to fetch an individual Pokemon by its id
 - https://pokeapi.co/api/v2/evolution-chain/${id}/ to fetch the evolution chain of each pokemon
 - https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${id}.png to fetch img of each pokemon
-
 
 ## Live view of the app
 
@@ -39,20 +45,23 @@ Four examples will demonstrate these differences:
 
 - Pokemon [115: Kangaskhan](https://pokemon25.netlify.app/pokemon/265), which
   does not have an evolution. Therefore, the tab is disabled.
-  
+
   <img width="400" src="https://github.com/YuriDevAT/pokemon/blob/master/public/images/kangaskhan.png" />
+
 - Pokemon [133: Eevee](https://pokemon25.netlify.app/pokemon/133), whish has
   several evolutions depending on which stone is used to force an evolution.
-  
+
   <img width="400" src="https://github.com/YuriDevAT/pokemon/blob/master/public/images/eevee.png" />
+
 - Pokemon [265: Wurmple](https://pokemon25.netlify.app/pokemon/265), which has
   two different first evolutions (depending on their nature) which then evolutes to
   an individuell second state.
-  
+
   <img width="400" src="https://github.com/YuriDevAT/pokemon/blob/master/public/images/wurmple.png" />
+
 - Pokemon [280: Ralts](https://pokemon25.netlify.app/pokemon/280), which has two
   different second evolution depending on its nature.
-  
+
   <img width="400" src="https://github.com/YuriDevAT/pokemon/blob/master/public/images/ralts.png" />
 
 There may be other Pokemon with other kind of singularities which I am not aware
